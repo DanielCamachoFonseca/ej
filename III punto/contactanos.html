@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+
+   <ul class="menu align-center">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="ingenios.html">Ingenios</a></li>
+        <li class="is-active"><a href="contactanos.html">Contactanos</a></li>
+  </ul>
+
+  <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<section id="cabecera">
+  <div class="contenedor">
+    <h1>Diseño y software ingenieros S.A.S</h1>
+  </div>
+</section>
+
+<div class="top-bar" id="responsive-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">SERVICIOS QUE PRESTAMOS</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li class="menu-text">Ingrese su correo electronico</li>
+      <li><input type="search" placeholder="Email"></li>
+      <li><button type="button" class="button">Suscribete</button></li>
+    </ul>
+  </div>
+</div>
+
+<form data-abide novalidate>
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <label>Nombre completo
+          <input type="text" placeholder="daniel camacho fonseca" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+          <span class="form-error" id="example1Error1">
+            Yo, you had better fill this out, it's required
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint1"></p>
+      </div>
+      <div class="cell small-12">
+        <label>Correo electronico
+          <input type="password" id="password" placeholder="danielcamacho_97@hotmail.com" aria-describedby="example1Hint2" aria-errormessage="example1Error2" required >
+          <span class="form-error" id="example1Error2">
+            I'm required!
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint2"></p>
+      </div>
+      <div class="cell small-12">
+        <label>Nombre de su empresa
+          <input type="password" placeholder="Ingenieria sa" aria-describedby="example1Hint3" aria-errormessage="example1Error3" required pattern="alpha_numeric" data-equalto="password">
+          <span class="form-error" id="example1Error3">
+
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint3"></p>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <label>Comentarios
+          <input type="text" placeholder="150 caracteres maximo" pattern="url">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <label>Tipo de empresa
+          <select id="select"required>
+            <option value=""></option>
+            <option value="volvo">Ingenieria</option>
+            <option value="saab">Adimistracion</option>
+            <option value="mercedes">Prestadora de servicios</option>
+            <option value="audi">Consultoria</option>
+          </select>
+        </label>
+      </div>
+      <fieldset class="cell large-6">
+      <button class="button" type="submit" value="Submit">Enviar formulario</button>
+    </fieldset>
+  </div>
+</form>
+
+<div class="callout success">
+  <h5>Desarrollo web</h5>
+  <p class="derechos">Derechos reservados, Copyright &copy; 2018</p>
+</div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
